@@ -1,17 +1,18 @@
+<script src="https://kit.fontawesome.com/4fc272cd61.js" crossorigin="anonymous"></script>
 @model Equipe
 @{
     ViewData["title"] = "Equipes";
 }
 
-<form method="POST" action='@Url.Action("Cadastrar")'>
+<form method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
     <label>ID</label>
     <input type="text" name="Id_equipe">
-    
+
     <label>Nome</label>
     <input type="text" name="Nome">
-    
+
     <label>Imagem</label>
-    <input type="text" name="Imagem">
+    <input type="file" name="Imagem">
 
     <button type="submit">Cadastrar</button>
 </form>
@@ -20,7 +21,7 @@
     <thead>
         <th>Id</th>
         <th>Nome</th>
-        <th>Foto</th>
+        <th>Logo</th>
     </thead>
     <tbody>
         @foreach (var item in ViewBag.Equipes)
@@ -28,7 +29,8 @@
             <tr>
                 <td>@item.Id_equipe</td>
                 <td>@item.Nome</td>
-                <td>@item.Imagem</td>
+                <td><img src="/img/Equipes/@item.Imagem" alt="Imagem da Equipe @item.Nome" width="50px"></td>
+                <td><a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@item.Id_equipe"><i class="fas fa-trash"></i></a></td>
             </tr>
         }
     </tbody>
