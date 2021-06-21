@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:#1E1C21;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 7vh;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0vh 3vw;
+}
+
+.menu{
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.container_banner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right, #5959ff 0%, #4747cb 28%, #32328e 63%, #000000 100%);
+}
+
+.container_banner img{
+    width: 632px;
+    height: 632px;
+}
+
+.box_texto_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao_inscriçao{
+    width: 282px;
+    height: 65px;
+    background-color: #2E2EB5;
+    border: none;
+    border-radius: 10px;
+}
+
+.botao_inscriçao a{
+    color: white;
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+}
+
+h1{
+    color: white;
+    font-size: 70px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.box_texto_banner span{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.box_texto_banner a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.container_jogos{
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box_imagens_jogos{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_participar{  
+    background-image: linear-gradient(rgba(0, 32, 112, 0.61), rgba(0, 31, 112, 0.61)), url("/assets/bg-lol.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box_retangulo{
+    background-color: #000000;
+    transform: skewY(-5deg);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box_texto_participar{
+    width: auto;
+    margin-top: 100px;
+    padding-left: 98px;
+    transform: skewY(5deg);
+}
+
+.box_texto_participar h2{
+    color: white;
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+.box_texto_participar p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    width: 668px;
+    text-align: justify;
+}
+
+.box_retangulo img{
+    width: 533px;
+    height: 511px;
+}
+
+.container_partidas{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.box_partidas{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_partida_ao_vivo{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_partida_ao_vivo h3{
+    width: 94px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+.box_partida_ao_vivo span{
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.box_partida_ao_vivo img{
+    width: 65px;
+    height: 61px;
+}
+
+.box_partida_em_breve{
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_partida_em_breve hr{
+    color: white;
+    background-color: white;
+    height: 70px;
+}
+
+.box_partida_em_breve h4{
+    width: 94px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+.box_partida_em_breve span{
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container_noticias{
+    background-color: #1E1C21;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.box_noticia{
+    width: 780px;
+    height: auto;
+    margin-right: 140px;
+}
+
+.box_noticia h5{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 15px 0;
+}
+
+.box_noticias_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.box_noticias_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_card_noticia{
+    width: 222px;
+    height: 346px;
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(27,27,27,1) 21%, rgba(44,44,44,1) 48%, rgba(27,27,27,1) 77%, rgba(0,0,0,1) 100%);
+}
+
+.box_card_noticia img{
+    width: 222px;
+    height: auto;    
+}
+
+.box_card_noticia span{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+
+.box_card_noticia p{
+    width: 197px;
+    margin-left: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: justify;
+}
+
+.box_proximas_partidas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo_proximas{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    margin-top: 15px;
+}
+
+.box_proximas{
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(27,27,27,1) 21%, rgba(44,44,44,1) 48%, rgba(27,27,27,1) 77%, rgba(0,0,0,1) 100%);
+    height: 731px;
+    width: 292px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_partida_1{
+    height: auto;
+    width: 217px;
+}
+
+.box_partida_1 span{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;    
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.links_uteis{
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 151px;
+}
+
+.links_uteis h6{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 151px;
+}
+
+.links_uteis a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.paginas{
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 151px;
+}
+
+.paginas h6{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 151px;
+}
+
+.paginas a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.logo_footer{
+    width: 339px;
+    height: 36px;
+}
+
+.redes_sociais input{
+    width: 150px;
+    height: 32px; 
+    font-size: 19px;
+    font-weight: bold;  
+    font-family: 'Titillium Web', sans-serif; 
+}
+
+.redes_sociais button{
+    background-color: #001F70;
+    border: none;
+    width: 117px;
+    height: 32px;
+    color: white;
+    font-size: 19px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+.redes_sociais span{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.redes img{
+    width: 47px;
+    height: 47px;
+}
+
+
+/* Pagina cadastro de times */
+
+.botao_menu i{
+    display: none;
+    color: white;
+    font-size: 35px;
+}
+.container_titulo{
+    background-image: linear-gradient(rgba(0, 32, 112, 0.61), rgba(0, 31, 112, 0.61)), url("/assets/bg-lol.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 237px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_titulo{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_titulo h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    font-weight: 700;    
+}
+
+.container_cadastrar{
+    background-color: #1E1C21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box_info_equipe{
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(27,27,27,1) 21%, rgba(44,44,44,1) 48%, rgba(27,27,27,1) 77%, rgba(0,0,0,1) 100%);
+    width: 770px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+}
+
+.box_cadastro{
+    display: flex;
+    flex-direction: column;
+}
+
+.box_cadastro button{
+    height: 40px;
+    width: 257px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #001F70;
+    color: white;
+    border: none;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;    
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.equipe{
+    background-color: #ABABAB;
+    width: 575px;
+    height: 30px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.Emblema{
+    border: none;
+}
+
+.box_cadastro span{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom: 7px;
+}
+
+.botao_cadastro{
+    display: flex;
+    justify-content: center;
+}
+
+
+.tabela_times h2{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+table{
+    border: 2px white solid;
+    width: 770px;
+    height: auto;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-spacing: 0;
+    margin-bottom: 56px;
+}
+
+.linha_1{
+    height: 60px;
+    background-color: #010101;
+}
+
+th{
+    border-bottom: 2px solid white;
+    border-collapse: collapse;
+}
+
+/* Pagina cadastro de jogadores */
+
+.container_titulo_2{
+    background-image: linear-gradient(rgba(85, 0, 0, 0.77), rgba(85, 0, 0, 0.77)), url("/assets/pilotos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 237px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_titulo_2{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_titulo_2 h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    font-weight: 700;    
+}
+
+.container_cadastrar_2{
+    background-color: #1E1C21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box_info_equipe_2{
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(27,27,27,1) 21%, rgba(44,44,44,1) 48%, rgba(27,27,27,1) 77%, rgba(0,0,0,1) 100%);
+    width: 770px;
+    height: 629px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 56px;
+}
+
+.box_cadastro_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+}
+
+.box_cadastro_2 span{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-top: 20px;
+}
+
+.box_cadastro_2 input{
+    width: 575px;
+    height: 30px;
+    background-color:#ABABAB;
+}
+
+.selecao_equipe{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom: 7px;
+}
+
+.selecao_equipe select{
+    width: 575px;
+    height: 30px;
+    background-color:#ABABAB;
+}
+
+.botao_cadastro button{
+    height: 40px;
+    width: 257px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #C31616;
+    color: white;
+    border: none;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;    
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.botao_cadastro{
+    display: flex;
+    justify-content: center;
+}
+
+.tabela_jogadores h2{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+table{
+    border: 2px white solid;
+    width: 770px;
+    height: 170px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-spacing: 0;
+    margin-bottom: 56px;
+}
+
+.linha_1{
+    height: 60px;
+    background-color: #010101;
+}
+
+th{
+    border-bottom: 2px solid white;
+    border-collapse: collapse;
+}
+
+/* Responsividade Cadastro de Jogadores */
+@media (max-width: 420px){
+    .header{
+        height: auto;
+    }
+    .logo{
+        justify-content: space-around;
+        height: 9vh;
+        width: 100%;
+        margin: 0 0;
+    }
+    .e-players img{
+        width: 161px;
+        margin-top: 15px;
+    }
+    .menu{
+        width: 100%;
+        height: 140px;
+        
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        
+        margin-top: 90px;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .botao_menu{
+        z-index: 3;
+    }
+    
+    .botao_menu i{
+        display: inline-block;
+    }    
+    
+    .box_titulo h1{
+        font-size: 30px;
+    }
+    .box_info_equipe{
+        width: 80vw;
+        height: 51vh;
+    }
+    .box_cadastro span{
+        font-size: 15px;
+    }
+    .equipe{
+        width: 70vw;
+    }
+    .botao_cadastro button{
+        height: 38px;
+        width: 43vw;
+        font-size: 15px;
+    }
+    .tabela_times h2{
+        font-size: 30px;
+    }
+    table{
+        width: 80vw;
+        font-size: 17px;
+    }
+    .box{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .links_uteis a{
+        font-size: 15px;
+    }
+    .paginas a{
+        font-size: 15px;
+    }
+
+    .logo_footer img{
+        width: 333px;
+    }
+}

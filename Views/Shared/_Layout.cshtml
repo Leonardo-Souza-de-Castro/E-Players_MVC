@@ -1,44 +1,65 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - E_players_MVC</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/4fc272cd61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/css/estilo.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">E_players_MVC</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<header>
+        <div class="logo">
+            <a asp-area="" asp-controller ="Home" asp-action="Index"><img src="~/assets/logo.svg" alt="logo do site"></a>
+
+            <nav class="menu">
+                <a asp-area="" asp-controller ="Home" asp-action="Index">Home</a>
+                <a href="#">Horários</a>
+                <a href="#">Campeonato</a>
+                <a href="#">Resultados</a>
+                <a href="#">Noticias</a>
+            </nav>
+        </div>
     </header>
-    <div class="container">
+    <div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - E_players_MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <footer>
+        <div class="box">
+        <div class="links_uteis">
+            <h6>Links Úteis</h6>
+            <a href="#">Regras de utilização</a>
+            <a href="#">Suporte</a>
+            <a href="#">Central de Ajuda</a>
+            <a href="#">Contato</a>
         </div>
+        <div class="paginas">
+            <h6>Páginas</h6>
+            <a href="#">Inicio</a>
+            <a href="#">Campeonato</a>
+            <a href="#">Resultados</a>
+            <a href="#">Notícias</a>
+            <a href="#">Login/Cadastro</a>
+        </div>
+
+        <div class="logo_footer">
+            <img src="~/assets/logo.svg" alt="logo site">
+        </div>
+
+        <div class="redes_sociais">
+            <input type="text"placeholder="Digite seu email">
+            <button>Cadastrar</button>
+            <div class="redes">
+            <span>Siga-nos em:</span>
+                <a href=""><img src="~/assets/instagram.png" alt="instagram"></a>
+                <a href=""><img src="~/assets/facebook.png" alt="facebook"></a>
+                <a href=""><img src="~/assets/youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+    </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

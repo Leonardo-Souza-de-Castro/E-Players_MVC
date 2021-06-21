@@ -2,8 +2,178 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <a class ="navbar-brand" asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
-</div>
+<section class="container_banner">
+    <img src="~/assets/fundo_banner.png" alt="Imagem do banner">
+    <div class="box_texto_banner">
+        <h1>Liga E-Players</h1>
+        <span>O maior portal de campeonatos online</span>
+        <button class="botao_inscriçao"><a asp-area="" asp-controller ="Equipe" asp-action="Index">Inscrever-se</a></button>
+    </div>
+</section>
+
+<section class="container_jogos">
+    <div class="box_imagens_jogos">
+        <img src="~/assets/formula-1-logo.png" alt="Logo Fórmula 1">
+        <img src="~/assets/logo-lol.png" alt="Logo LOL">
+        <img src="~/assets/Counter-Strike-Logo.png" alt="Logo do Counter Strike">
+        <img src="~/assets/valorant-logo.png" alt="Logo do Valorant">
+        <img src="~/assets/FIFA_logo.png" alt="Logo do FIFA">
+    </div>
+</section>
+
+<section class="container_participar">
+    <div class="box_retangulo">
+        <div class="box_texto_participar">
+            <h2>Como participar das ligas?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat tellus ut dolor
+                luctus, et scelerisque ante accumsan. Vivamus consectetur lorem in consectetur tincidunt. Nunc
+                non condimentum ipsum. Integer porttitor dui quam, eu ullamcorper massa eleifend ut. Vestibulum
+                dapibus, neque id consequat tempus, erat diam vestibulum lacus, at scelerisque elit erat eget
+                ex. Aenean id lacinia metus. Etiam pellentesque mauris a venenatis tristique. Praesent ut felis
+                felis. Sed lacinia felis vitae odio accumsan mattis. Nullam a mollis dolor. Ut egestas urna ac
+                eros cursus, tristique vestibulum nisi condimentum. Sed vel diam sodales, auctor dui eu,
+                scelerisque diam.
+            </p>
+        </div>
+        <img src="~/assets/league-of-legends-champions.png" alt="imagem">
+    </div>
+</section>
+
+<section class="container_partidas">
+    <div class="box_partidas">
+        <div class="box_partida_ao_vivo">
+            <h3>Ao Vivo</h3>
+            <span>Sk</span>
+            <img src="~/assets/sk-logo.png" alt="Logo do Time">
+            <span>Vs</span>
+            <img src="~/assets/fla-logo.png" alt="Logo do Time">
+            <span>Fla</span>
+        </div>
+        <div class="box_partida_em_breve">
+            <hr>
+            </hr>
+            <h4>Em Breve</h4>
+
+            <span>Sk</span>
+            <img src="~/assets/sk-logo.png" alt="Logo do Time">
+            <span>Vs</span>
+            <img src="~/assets/fla-logo.png" alt="Logo do Time">
+            <span>Fla</span>
+
+            <span>Sk</span>
+            <img src="~/assets/sk-logo.png" alt="Logo do Time">
+            <span>Vs</span>
+            <img src="~/assets/fla-logo.png" alt="Logo do Time">
+            <span>Fla</span>
+        </div>
+    </div>
+</section>
+
+<section class="container_noticias">
+    <div class="box_noticia">
+        <h5>Noticias</h5>
+        <div class="box_noticias_1">
+            <article class="box_card_noticia">
+                <img src="~/assets/player.jpg" alt="Noticia">
+                <span>Titulo da Noticia</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies, massa dictum
+                    scelerisque venenatis, velit neque luctus massa, sed varius diam.</p>
+            </article>
+
+            <article class="box_card_noticia">
+                <img src="~/assets/player.jpg" alt="Noticia">
+                <span>Titulo da Noticia</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies, massa dictum
+                    scelerisque venenatis, velit neque luctus massa, sed varius diam.</p>
+            </article>
+
+            <article class="box_card_noticia">
+                <img src="~/assets/player.jpg" alt="Noticia">
+                <span>Titulo da Noticia</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies, massa dictum
+                    scelerisque venenatis, velit neque luctus massa, sed varius diam.</p>
+            </article>
+        </div>
+
+        <div class="box_noticias_2">
+            <article class="box_card_noticia">
+                <img src="~/assets/player.jpg" alt="Noticia">
+                <span>Titulo da Noticia</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies, massa dictum
+                    scelerisque venenatis, velit neque luctus massa, sed varius diam.</p>
+            </article>
+
+            <article class="box_card_noticia">
+                <img src="~/assets/player.jpg" alt="Noticia">
+                <span>Titulo da Noticia</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies, massa dictum
+                    scelerisque venenatis, velit neque luctus massa, sed varius diam.</p>
+            </article>
+
+            <article class="box_card_noticia">
+                <img src="~/assets/player.jpg" alt="Noticia">
+                <span>Titulo da Noticia</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies, massa dictum
+                    scelerisque venenatis, velit neque luctus massa, sed varius diam.</p>
+            </article>
+        </div>
+    </div>
+    <div class="box_proximas_partidas">
+        <h6 class="titulo_proximas">Próximas Partidas</h6>
+        <div class="box_proximas">
+            <div class="box_partida_1">
+                <span>Sk</span>
+                <img src="~/assets/sk-logo.png" alt="Logo do Time">
+                <span>Vs</span>
+                <img src="~/assets/fla-logo.png" alt="Logo do Time">
+                <span>Fla</span>
+                <span>01/01/2021 19:00</span>
+            </div>
+
+            <div class="box_partida_1">
+                <span>Sk</span>
+                <img src="~/assets/sk-logo.png" alt="Logo do Time">
+                <span>Vs</span>
+                <img src="~/assets/fla-logo.png" alt="Logo do Time">
+                <span>Fla</span>
+                <span>01/01/2021 19:00</span>
+            </div>
+
+            <div class="box_partida_1">
+                <span>Sk</span>
+                <img src="~/assets/sk-logo.png" alt="Logo do Time">
+                <span>Vs</span>
+                <img src="~/assets/fla-logo.png" alt="Logo do Time">
+                <span>Fla</span>
+                <span>01/01/2021 19:00</span>
+            </div>
+
+            <div class="box_partida_1">
+                <span>Sk</span>
+                <img src="~/assets/sk-logo.png" alt="Logo do Time">
+                <span>Vs</span>
+                <img src="~/assets/fla-logo.png" alt="Logo do Time">
+                <span>Fla</span>
+                <span>01/01/2021 19:00</span>
+            </div>
+
+            <div class="box_partida_1">
+                <span>Sk</span>
+                <img src="~/assets/sk-logo.png" alt="Logo do Time">
+                <span>Vs</span>
+                <img src="~/assets/fla-logo.png" alt="Logo do Time">
+                <span>Fla</span>
+                <span>01/01/2021 19:00</span>
+            </div>
+
+            <div class="box_partida_1">
+                <span>Sk</span>
+                <img src="~/assets/sk-logo.png" alt="Logo do Time">
+                <span>Vs</span>
+                <img src="~/assets/fla-logo.png" alt="Logo do Time">
+                <span>Fla</span>
+                <span>01/01/2021 19:00</span>
+            </div>
+        </div>
+    </div>
+</section>
