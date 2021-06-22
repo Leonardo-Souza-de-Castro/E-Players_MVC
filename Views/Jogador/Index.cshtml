@@ -1,0 +1,54 @@
+@model Jogador
+@{
+    ViewData["Title"] = "Jogadores";
+}
+
+<section class="container_titulo_2">
+    <div class="box_titulo_2">
+        <h1>Cadastro de Jogadores</h1>
+    </div>
+</section>
+
+<section class="container_cadastrar_2">
+    <form method="POST" action='@Url.Action("Cadastrar")' class="Cadastrar">
+        <div class="box_info_equipe_2">
+            <div class="box_cadastro_2">
+                <span>ID do Jogador:</span>
+                <input type="text" name="IdJogador" class="Jogador">
+                <span>ID da Equipe:</span>
+                <input type="text" name="IdEquipe" class="Jogador">
+                <span>Nome do Jogador:</span>
+                <input type="text" name="Nome" class="Jogador">
+                <span>Email:</span>
+                <input type="email" name="Email" class="Jogador">
+                <span>Senha:</span>
+                <input type="password" name="Senha" class="Jogador">
+            </div>
+            <div class="botao_cadastro">
+                <a href=""><button>Cadastrar</button></a>
+            </div>
+        </div>
+
+        <div class="tabela_jogadores">
+            <h2>Lista de Jogadores</h2>
+            <table>
+                <tr class="linha_1">
+                    <th>ID do Jogador</th>
+                    <th>Nome</th>
+                </tr>
+                <tbody>
+                    @foreach (var item in ViewBag.Jogadores)
+                    {
+                        <tr>
+                            <td>@item.Id_Jogador</td>
+                            <td>@item.Nome</td>
+                            @* <td>@ViewBag.Equipe.Find(x => x.Id_Equipe == item.Id_Equipe).Imagem</td>  *@
+                            <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir"
+                                asp-route-id="@item.Id_Jogador"><i class="fas fa-trash"></i></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </form>
+</section>
