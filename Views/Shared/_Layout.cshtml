@@ -23,8 +23,9 @@
                 {
                     <span>Ola @ViewBag.UserName</span>
                     <a asp-area="" asp-controller ="Login" asp-action="Logout">Logout</a>
-                }
+                }else{
                 <a asp-area="" asp-controller ="Login" asp-action="Logar">Login</a>
+                }
             </nav>
         </div>
     </header>

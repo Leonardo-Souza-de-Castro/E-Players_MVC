@@ -63,9 +63,11 @@ namespace E_players_MVC.Models
            Reescrever_CSV(CAMINHO, linhas_do_csv);
         }
 
-        public void Deletar(int IdJogador)
+        public void Deletar(int Id_Jogador)
         {
-            throw new System.NotImplementedException();
+            List<string> linhas_do_csv = Ler_Todas_as_Linhas_CSV(CAMINHO);
+           linhas_do_csv.RemoveAll(item => item.Split(";")[0] == Id_Jogador.ToString());
+           Reescrever_CSV(CAMINHO, linhas_do_csv);
         }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dev\\Desktop\\Leonardo\\E-Players_MVC\\E-players_MVC.csproj": {}
+    "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\E-Players_MVC\\E-players_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dev\\Desktop\\Leonardo\\E-Players_MVC\\E-players_MVC.csproj": {
+    "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\E-Players_MVC\\E-players_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dev\\Desktop\\Leonardo\\E-Players_MVC\\E-players_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\E-Players_MVC\\E-players_MVC.csproj",
         "projectName": "E-players_MVC",
-        "projectPath": "C:\\Users\\dev\\Desktop\\Leonardo\\E-Players_MVC\\E-players_MVC.csproj",
-        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dev\\Desktop\\Leonardo\\E-Players_MVC\\obj\\",
+        "projectPath": "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\E-Players_MVC\\E-players_MVC.csproj",
+        "packagesPath": "C:\\Users\\guilherme_2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\E-Players_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\guilherme_2\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

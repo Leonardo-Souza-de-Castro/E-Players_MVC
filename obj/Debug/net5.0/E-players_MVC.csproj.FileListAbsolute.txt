@@ -82,3 +82,5 @@ C:\Users\dev\Desktop\Leonardo\E-Players_MVC\obj\Debug\net5.0\E-players_MVC.genru
 C:\Users\dev\Desktop\Leonardo\E-Players_MVC\obj\Debug\net5.0\E-players_MVC.csproj.CopyComplete
 C:\Users\dev\Desktop\Leonardo\E-Players_MVC\obj\Debug\net5.0\Razor\Views\Jogador\Index.cshtml.g.cs
 C:\Users\dev\Desktop\Leonardo\E-Players_MVC\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\E-Players_MVC\obj\Debug\net5.0\Razor\Views\Jogador\Index.cshtml.g.cs
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\E-Players_MVC\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
